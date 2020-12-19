@@ -16,5 +16,7 @@ User loginUser = (User) session.getAttribute("loginUser");
 <p>
 <%= loginUser.getName() %>さん、ログイン中
 </p>
+<br>
+<a href="/docoTsubu/Logout">ログアウト</a>
 </body>
 </html>
