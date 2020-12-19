@@ -86,11 +86,11 @@ public class Main extends HttpServlet {
 
 			// アプリケーションスコープにつぶやきリストを保存
 			application.setAttribute("tweetList", tweetList);
-
-			// メイン画面にフォワード
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
-			dispatcher.forward(request, response);
 		}
+
+		// メイン画面にフォワード
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
+		dispatcher.forward(request, response);
 	}
 
 }

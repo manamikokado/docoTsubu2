@@ -16,7 +16,7 @@ List<Tweet> tweetList = (List<Tweet>) application.getAttribute("tweetList");
 <body>
 <h1>どこつぶメイン</h1>
 <p>
-<%= loginUser.getName() %>さん、ログイン中
+<%= loginUser.getName() %>さん、ログイン中　
 <a href="/docoTsubu/Logout">ログアウト</a>
 </p>
 <p><a href="/docoTsubu/Main">更新</a></p>
@@ -25,7 +25,7 @@ List<Tweet> tweetList = (List<Tweet>) application.getAttribute("tweetList");
 <input type="submit" value="つぶやく">
 </form>
 <% for(Tweet tweet : tweetList) { %>
-	<p><%= tweet.getName() %>:<%= tweet.getText() %></p>
+	<p><%= tweet.getName() %>：<%= tweet.getText() %></p>
 <% } %>
 </body>
 </html>
